@@ -44,12 +44,13 @@
 
         .text-link {
             display: inline-block;
+            border-bottom: 1px solid #2D3043;
         }
 
         .text-link:after {
             display: block;
             content: '';
-            border-bottom: solid 2px #2D3043;  
+            border-bottom: solid 1px #2D3043;  
             transform: scaleX(0);
             transition: transform 250ms ease-in-out;
         }
@@ -111,6 +112,7 @@
         #navbar-icon {
             height: 75px;
             border-radius: 50px;
+            animation: spin 35s infinite linear;
         }
 
         .navbar-link {
@@ -142,6 +144,17 @@
 
         #dark-icon {
             border-radius: 50%;
+            animation: spin 35s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 
@@ -150,7 +163,7 @@
 
     <header>
         <center id="navbar">
-            <a href="https://aryanbeezadhur.com"><img id="navbar-icon" src="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BMMIcon.jpg" alt="BMM Logo" /></a>
+            <a href="https://bmm.now.sh"><img id="navbar-icon" src="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BMMIcon.jpg" alt="BMM Logo" /></a>
             <a href="https://youtube.com/bassmusicmovement" class="navbar-link text-link">YouTube</a>
             <a href="https://open.spotify.com/user/7m61o9zzm0l482iovt84fz0w0" class="navbar-link text-link">Spotify</a>
             <a href="https://instagram.com/bassmusicmovement" class="navbar-link text-link">Instagram</a>
@@ -170,7 +183,7 @@
     </main>
 
     <footer>
-        <center><p>&copy; 2016 &mdash; 2020 <a href="https://aryanbeezadhur.com" class="text-link" style="text-decoration: underline;">Aryan Beezadhur</a></p></center>
+        <center><p>&copy; 2016 &mdash; 2020 <a href="https://aryanbeezadhur.com" class="text-link">Aryan Beezadhur</a></p></center>
     </footer>
 </body>
 </html>
