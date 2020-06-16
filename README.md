@@ -1,8 +1,14 @@
 # Bass Music Movement
 Website for Bass Music Movement (BMM) by [Aryan Beezadhur](https://aryanbeezadhur.com)
 
-![BMM Icon](https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BMMIcon.jpg)
+<center>
+  <img alt="BMM Icon" title="BMM Icon" src="https://bmm.now.sh/BMMIcon.jpg" />
+</center>
 
-![Dark BMM Icon](https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/DarkBMMIcon.jpg)
+<center>
+  <img alt="Dark BMM Icon" title="Dark BMM Icon" src="https://bmm.now.sh/DarkBMMIcon.jpg" />
+</center>
 
-![Bass Music Movement](https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BassMusicMovement.jpg)
+<center>
+  <img alt="Bass Music Movement" title="Bass Music Movement" src="https://bmm.now.sh/BassMusicMovement.jpg" />
+</center>
