@@ -8,7 +8,7 @@
     <!-- Browser tab: Title and icon -->
     <title>Bass Music Movement</title>
     <link rel="shortcut icon" type="image/x-icon"
-        href="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BMMIcon.jpg" />
+        href="https://bmm.now.sh/BMMIcon.jpg" />
 
     <!-- SEO (Google, Bing, Yahoo, Ask) -->
     <meta name="description" content="Music promotion, record label and cars" />
@@ -22,7 +22,7 @@
     <!-- Facebook card -->
     <meta property="og:title" content="Bass Music Movement" />
     <meta property="og:image"
-        content="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BassMusicMovement.jpg" />
+        content="https://bmm.now.sh/BassMusicMovement.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bmm.now.sh" />
     <meta property="og:site_name" content="Bass Music Movement" />
@@ -36,7 +36,7 @@
     <meta name="twitter:title" content="Bass Music Movement" />
     <meta name="twitter:description" content="Music promotion, record label and cars" />
     <meta name="twitter:image"
-        content="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BassMusicMovement.jpg" />
+        content="https://bmm.now.sh/BassMusicMovement.jpg" />
     <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
     <meta name="twitter:url" content="https://bmm.now.sh" />
 
@@ -124,14 +124,16 @@
             border: none !important;
         }
 
-        #top-section {
-            background-image: url("https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BassMusicMovement.jpg");
-
-            height: 1000px;
+        .parallax {
+            height: 800px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        #top-section {
+            background-image: url("https://bmm.now.sh/BassMusicMovement.jpg");
         }
 
         #text-logo {
@@ -149,6 +151,16 @@
             border-radius: 50%;
             margin: 30px;
             animation: spin 35s infinite linear;
+        }
+
+        .thumbnail-title {
+            color: #FFFFFF;
+            font-size: 75px;
+            padding-top: 400px;
+        }
+
+        #thumbnailone {
+            background-image: url("https://bmm.now.sh/BMMthumbnail1.jpg");
         }
 
         @keyframes spin {
@@ -169,7 +181,7 @@
     <header>
         <center id="navbar">
             <a href="https://bmm.now.sh"><img id="navbar-icon"
-                    src="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/BMMIcon.jpg"
+                    src="https://bmm.now.sh/BMMIcon.jpg"
                     alt="BMM Logo" /></a>
             <a href="https://youtube.com/bassmusicmovement" class="navbar-link text-link">YouTube</a>
             <a href="https://open.spotify.com/user/7m61o9zzm0l482iovt84fz0w0" class="navbar-link text-link">Spotify</a>
@@ -181,7 +193,7 @@
 
     <main>
 
-        <section id="top-section">
+        <section id="top-section" class="parallax">
             <center>
                 <h1 id="text-logo">bassmusic<span>movement</span></h1>
             </center>
@@ -189,10 +201,17 @@
 
         <section>
             <center><img id="dark-icon"
-                    src="https://raw.githubusercontent.com/AryanBeezadhur/BassMusicMovement/master/DarkBMMIcon.jpg"
+                    src="https://bmm.now.sh/DarkBMMIcon.jpg"
                     alt="Dark BMM Icon" /></center>
             <center>
                 <h1>Music promotion, record label and cars</h1>
+            </center>
+        </section>
+
+        <section id="thumbnailone" class="parallax">
+            <center>
+                <h1 class="thumbnail-title">Lucky Luke - F.E.E.L</h1>
+                <h1 class="thumbnail-tagline">WATCH &rarr;</h1>
             </center>
         </section>
 
