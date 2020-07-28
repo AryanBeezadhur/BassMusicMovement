@@ -7,8 +7,7 @@
 
     <!-- Browser tab: Title and icon -->
     <title>Bass Music Movement</title>
-    <link rel="shortcut icon" type="image/x-icon"
-        href="https://bmm.now.sh/BMMIcon.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/BMMIcon.jpg" />
 
     <!-- SEO (Google, Bing, Yahoo, Ask) -->
     <meta name="description" content="Music promotion, record label and cars" />
@@ -21,8 +20,7 @@
 
     <!-- Facebook card -->
     <meta property="og:title" content="Bass Music Movement" />
-    <meta property="og:image"
-        content="https://bmm.now.sh/BassMusicMovement.jpg" />
+    <meta property="og:image" content="https://bmm.now.sh/assets/BassMusicMovement.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bmm.now.sh" />
     <meta property="og:site_name" content="Bass Music Movement" />
@@ -35,26 +33,25 @@
     <meta name="twitter:domain" content="bmm.now.sh" />
     <meta name="twitter:title" content="Bass Music Movement" />
     <meta name="twitter:description" content="Music promotion, record label and cars" />
-    <meta name="twitter:image"
-        content="https://bmm.now.sh/BassMusicMovement.jpg" />
+    <meta name="twitter:image" content="https://bmm.now.sh/asets/BassMusicMovement.jpg" />
     <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
     <meta name="twitter:url" content="https://bmm.now.sh" />
 
     <!-- Import Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <style type="text/css">
         /* CSS Snippet For .text-link Border On Hover */
 
         .text-link {
             display: inline-block;
-            border-bottom: 1px solid #2D3043;
+            border-bottom: 2px solid var(--black);
         }
 
         .text-link:after {
             display: block;
             content: '';
-            border-bottom: solid 1px #2D3043;
+            border-bottom: solid 2px var(--black);
             transform: scaleX(0);
             transition: transform 250ms ease-in-out;
         }
@@ -65,9 +62,14 @@
 
         /* END OF CSS SNIPPET */
 
+        :root {
+            --black: #2D3043;
+            --white: #F5F5F5;
+        }
+
         ::selection {
-            background-color: #2D3043;
-            color: #FFFFFF;
+            background-color: var(--black);
+            color: var(--white);
         }
 
         html {
@@ -77,23 +79,23 @@
         body {
             padding: 0;
             margin: 0;
-            font-family: 'Sulphur Point', sans-serif;
+            font-family: 'Poppins', sans-serif;
             -webkit-font-smoothing: antialiased;
-            background-color: #F5F5F5;
-            color: #2D3043;
+            background-color: var(--white);
+            color: var(--black);
         }
 
         a {
             text-decoration: none;
-            color: #2D3043;
+            color: var(--black);
         }
 
         a:focus {
-            color: #2D3043;
+            color: var(--black);
         }
 
         a:visited {
-            color: #2D3043;
+            color: var(--black);
         }
 
         h1 {
@@ -103,64 +105,52 @@
 
         #navbar {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            height: 100px;
             width: 100%;
-            position: fixed;
-            z-index: 1;
-            background-color: #F5F5F5;
+            background-color: var(--white);
         }
 
         #navbar-icon {
-            height: 75px;
+            height: 10vh;
+            border-radius: 50%;
             animation: spin 35s infinite linear;
         }
 
         .navbar-link {
             margin: 20px 50px 20px 50px;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 2.7vh;
             border: none !important;
         }
 
-        .parallax {
-            height: 800px;
+        #top-parallax-section {
+            background-image: url("assets/BassMusicMovement.jpg");
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        #top-section {
-            background-image: url("https://bmm.now.sh/BassMusicMovement.jpg");
-        }
-
         #text-logo {
-            font-size: 75px;
+            font-size: 9vh;
             font-weight: normal;
-            padding-top: 500px;
-            color: #F5F5F5;
+            padding-top: 65vh;
+            color: var(--white);
         }
 
-        #text-logo span {
-            font-weight: bold;
+        #mobile-bmm {
+            width: 95vw;
+            border-radius: 10px;
         }
 
         #dark-icon {
+            height: 25vw;
             border-radius: 50%;
             margin: 30px;
             animation: spin 35s infinite linear;
-        }
-
-        .thumbnail-title {
-            color: #FFFFFF;
-            font-size: 75px;
-            padding-top: 400px;
-        }
-
-        #thumbnailone {
-            background-image: url("https://bmm.now.sh/BMMthumbnail1.jpg");
         }
 
         @keyframes spin {
@@ -172,6 +162,34 @@
                 transform: rotate(360deg);
             }
         }
+
+        @media only screen and (min-width: 770px) {
+            .mobile-display {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+
+            #top-parallax-section {
+                background: var(--black);
+            }
+
+            .navbar-link {
+                flex: 200px;
+                height: 10px;
+                margin-top: 5px;
+            }
+
+            #text-logo {
+                padding: none;
+            }
+
+            #mobile-top {
+                position: relative;
+                top: -65vh;
+            }
+        }
     </style>
 
 </head>
@@ -179,48 +197,60 @@
 <body>
 
     <header>
+
         <center id="navbar">
-            <a href="https://bmm.now.sh"><img id="navbar-icon"
-                    src="https://bmm.now.sh/BMMIcon.jpg"
+
+            <a href="https://bmm.now.sh"><img id="navbar-icon" src="https://bmm.now.sh/BMMIcon.jpg"
                     alt="BMM Logo" /></a>
             <a href="https://youtube.com/bassmusicmovement" class="navbar-link text-link">YouTube</a>
             <a href="https://open.spotify.com/user/7m61o9zzm0l482iovt84fz0w0" class="navbar-link text-link">Spotify</a>
             <a href="https://instagram.com/bassmusicmovement" class="navbar-link text-link">Instagram</a>
             <a href="https://www.facebook.com/thebassmusicmovement" class="navbar-link text-link">Facebook</a>
             <a href="https://twitter.com/officialbmm" class="navbar-link text-link">Twitter</a>
+
         </center>
+
     </header>
 
     <main>
 
-        <section id="top-section" class="parallax">
+        <section id="top-parallax-section">
+
             <center>
-                <h1 id="text-logo">bassmusic<span>movement</span></h1>
+
+                <div id="mobile-top">
+
+                    <h1 id="text-logo">
+                        bass<br class="mobile-display" />music<br class="mobile-display" /><strong>movement</strong>
+                    </h1>
+
+                    <img class="mobile-display" id="mobile-bmm" src="assets/BassMusicMovement.jpg" />
+
+                </div>
             </center>
+
         </section>
 
         <section>
-            <center><img id="dark-icon"
-                    src="https://bmm.now.sh/DarkBMMIcon.jpg"
-                    alt="Dark BMM Icon" /></center>
+
+            <center>
+                <img id="dark-icon" src="https://bmm.now.sh/DarkBMMIcon.jpg" alt="Dark BMM Icon" />
+            </center>
+
             <center>
                 <h1>Music promotion, record label and cars</h1>
             </center>
-        </section>
 
-        <section id="thumbnailone" class="parallax">
-            <center>
-                <h1 class="thumbnail-title">Lucky Luke - F.E.E.L</h1>
-                <h1 class="thumbnail-tagline">WATCH &rarr;</h1>
-            </center>
         </section>
 
     </main>
 
     <footer>
+
         <center>
             <p>&copy; 2020 <a href="https://aryanbeezadhur.com" class="text-link">Aryan Beezadhur</a></p>
         </center>
+
     </footer>
 </body>
 
