@@ -9,13 +9,11 @@
     <title>Bass Music Movement</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/BMMIcon.jpg" />
 
-    <!-- SEO (Google, Bing, Yahoo, Ask) -->
+    <!-- SEO -->
     <meta name="description" content="Music promotion, record label and cars" />
     <meta name="title" content="Bass Music Movement">
     <meta name="robots" content="index, follow" />
-    <meta name="keywords"
-        content="bass, music, bass music movement, bass boosted, record label, cars, music promotion, BassMusicMovement, bassmusicmovement">
-    <!-- Theme color for android search engines -->
+    <!-- Theme color for android browsers -->
     <meta name="theme-color" content="#2D3043" />
 
     <!-- OpenGraph card -->
@@ -37,196 +35,66 @@
     <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
     <meta name="twitter:url" content="https://bmm.now.sh" />
 
-    <!-- Import Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <style type="text/css">
-        /* CSS Snippet For .text-link Border On Hover */
-
-        .text-link {
-            display: inline-block;
-            border-bottom: 2px solid var(--black);
-        }
-
-        .text-link:after {
-            display: block;
-            content: '';
-            border-bottom: solid 2px var(--black);
-            transform: scaleX(0);
-            transition: transform 250ms ease-in-out;
-        }
-
-        .text-link:hover:after {
-            transform: scaleX(1);
-        }
-
-        /* END OF CSS SNIPPET */
-
-        :root {
-            --black: #2D3043;
-            --white: #F5F5F5;
-        }
-
-        ::selection {
-            background-color: var(--black);
-            color: var(--white);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            background-color: var(--white);
-            color: var(--black);
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--black);
-        }
-
-        a:focus {
-            color: var(--black);
-        }
-
-        a:visited {
-            color: var(--black);
-        }
-
-        h1 {
-            padding: 0;
-            margin: 0;
-        }
-
-        #navbar {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background-color: var(--white);
-        }
-
-        #navbar-icon {
-            height: 10vh;
-            border-radius: 50%;
-            animation: spin 35s infinite linear;
-        }
-
-        .navbar-link {
-            margin: 20px 50px 20px 50px;
-            font-weight: bold;
-            font-size: 2.7vh;
-            border: none !important;
-        }
-
-        #top-parallax-section {
-            background-image: url("assets/BassMusicMovement.jpg");
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #text-logo {
-            font-size: 9vh;
-            font-weight: normal;
-            padding-top: 65vh;
-            color: var(--white);
-        }
-
-        #mobile-bmm {
-            width: 95vw;
-            border-radius: 10px;
-        }
-
-        #dark-icon {
-            height: 25vw;
-            border-radius: 50%;
-            margin: 30px;
-            animation: spin 35s infinite linear;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @media only screen and (min-width: 770px) {
-            .mobile-display {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 770px) {
-
-            #top-parallax-section {
-                background: var(--black);
-            }
-
-            .navbar-link {
-                flex: 200px;
-                height: 10px;
-                margin-top: 5px;
-            }
-
-            #text-logo {
-                padding: none;
-            }
-
-            #mobile-top {
-                position: relative;
-                top: -65vh;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <header>
+    <header id="navbar">
 
-        <center id="navbar">
+        <nav>
 
-            <a href="https://bmm.now.sh"><img id="navbar-icon" src="assets/BMMIcon.jpg"
-                    alt="BMM Logo" /></a>
-            <a href="https://youtube.com/bassmusicmovement" class="navbar-link text-link">YouTube</a>
-            <a href="https://open.spotify.com/user/7m61o9zzm0l482iovt84fz0w0" class="navbar-link text-link">Spotify</a>
-            <a href="https://instagram.com/bassmusicmovement" class="navbar-link text-link">Instagram</a>
-            <a href="https://www.facebook.com/thebassmusicmovement" class="navbar-link text-link">Facebook</a>
-            <a href="https://twitter.com/officialbmm" class="navbar-link text-link">Twitter</a>
+            <ul>
 
-        </center>
+                <li>
+                    <a href="/">
+                        <img id="navbar-icon" src="assets/DarkBMMIcon.jpg" alt="BMM Logo" />
+                    </a>
+                </li>
+
+                <li class="hide-desktop">
+                    <label id="menu-btn">Menu</label>
+                </li>
+
+                <li>
+                    <a href="https://youtube.com/bassmusicmovement" class="navbar-link hide-mobile">YouTube</a>
+                </li>
+
+                <li>
+                    <a href="https://open.spotify.com/user/7m61o9zzm0l482iovt84fz0w0" class="navbar-link hide-mobile">
+                        Spotify
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://instagram.com/bassmusicmovement" class="navbar-link hide-mobile">Instagram</a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/thebassmusicmovement" class="navbar-link hide-mobile">Facebook</a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/officialbmm" class="navbar-link hide-mobile">Twitter</a>
+                </li>
+
+            </ul>
+
+        </nav>
 
     </header>
 
     <main>
 
-        <section id="top-parallax-section">
+        <section>
 
             <center>
 
-                <div id="mobile-top">
+                <h1 id="title">
+                    bass<br class="hide-desktop" />music<br class="hide-desktop" /><strong>movement</strong>
+                </h1>
 
-                    <h1 id="text-logo">
-                        bass<br class="mobile-display" />music<br class="mobile-display" /><strong>movement</strong>
-                    </h1>
-
-                    <img class="mobile-display" id="mobile-bmm" src="assets/BassMusicMovement.jpg" />
-
-                </div>
             </center>
 
         </section>
@@ -234,11 +102,15 @@
         <section>
 
             <center>
+
                 <img id="dark-icon" src="assets/DarkBMMIcon.jpg" alt="Dark BMM Icon" />
+
             </center>
 
             <center>
+
                 <h1>Music promotion, record label and cars</h1>
+
             </center>
 
         </section>
@@ -246,12 +118,11 @@
     </main>
 
     <footer>
-
         <center>
-            <p>&copy; 2020 <a href="https://aryanbeezadhur.com" class="text-link">Aryan Beezadhur</a></p>
+            <p>Created by <a href="https://aryanbeezadhur.com">Aryan Beezadhur</a></p>
         </center>
-
     </footer>
+
 </body>
 
 </html>
