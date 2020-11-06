@@ -38,7 +38,7 @@ a:after {
     content: '';
     border-bottom: solid 1px;
     transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover:after {
@@ -81,12 +81,13 @@ h1 {
     font-weight: bold;
     font-size: 2.7vh;
     color: var(--white);
+    transition: all 0.2s;
 }
 
 #menu-btn {
     border: none;
     outline: none;
-    margin-left: 125px;
+    margin-left: 100px;
     padding: 10px;
     border-radius: 5px;
     background: var(--blue);
@@ -127,18 +128,14 @@ section {
         transform: scaleX(0);
     }
 
-    25% {
-        transform: scaleX(1);
-    }
-
     50% {
-        transform: scaleX(0);
-        border-color: #5EC0EF;
         transform: scaleX(1);
     }
 
     100% {
         transform: scaleX(0);
+        border-color: #5EC0EF;
+        transform: scaleX(1);
     }
 }
 
@@ -175,6 +172,10 @@ section {
     }
 
     .hide-mobile {
-        display: none;
+        opacity: 0;
+    }
+
+    .navbar-mobile-menu-closed {
+        height: 90px;
     }
 }

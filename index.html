@@ -35,13 +35,14 @@
     <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
     <meta name="twitter:url" content="https://bmm.now.sh" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <header id="navbar">
+    <header id="navbar" class="navbar-mobile-menu-closed">
 
         <nav>
 
@@ -54,7 +55,7 @@
                 </li>
 
                 <li class="hide-desktop">
-                    <label id="menu-btn">Menu</label>
+                    <button id="menu-btn">Menu</button>
                 </li>
 
                 <li>
@@ -119,9 +120,25 @@
 
     <footer>
         <center>
-            <p>Created by <a href="https://aryanbeezadhur.com">Aryan Beezadhur</a></p>
+            <p>Website created by <a href="https://aryanbeezadhur.com">Aryan Beezadhur</a></p>
         </center>
     </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <script>
+
+        const $navbar = $('#navbar')
+        const $menuBtn = $('#menu-btn')
+        const $navbarLinks = $('.navbar-link')
+
+        $menuBtn.on('click', () => {
+            $navbarLinks.toggleClass('hide-mobile')
+            $navbar.toggleClass('navbar-mobile-menu-closed')
+        })
+
+    </script>
 
 </body>
 
