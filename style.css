@@ -11,6 +11,10 @@
     color: var(--white);
 }
 
+* {
+    outline: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -86,7 +90,6 @@ h1 {
 
 #menu-btn {
     border: none;
-    outline: none;
     margin-left: 100px;
     padding: 10px;
     border-radius: 5px;
