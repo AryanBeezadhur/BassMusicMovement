@@ -106,20 +106,20 @@ section {
     display: inline-block;
 }
 
-#title:before {
+#title::before {
     display: block;
     content: '';
     border: solid 2px #BF2E3D;
     transform: scaleX(0);
-    animation: pop 3s infinite forwards;
+    animation: pop 2s forwards;
 }
 
-#title:after {
+#title::after {
     display: block;
     content: '';
     border: solid 2px #BF2E3D;
     transform: scaleX(0);
-    animation: pop 3s infinite forwards;
+    animation: pop 2s forwards;
 }
 
 @keyframes pop {
