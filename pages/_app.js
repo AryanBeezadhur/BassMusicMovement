@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 
                 {/* OpenGraph card */}
                 <meta property="og:title" content="Bass Music Movement" />
-                <meta property="og:image" content="https://bmm.now.sh/assets/BassMusicMovement.jpg" />
+                <meta property="og:image" content="https://bmm.now.sh/BassMusicMovement.jpg" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://bmm.now.sh" />
                 <meta property="og:site_name" content="www.bmm.now.sh" />
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name="twitter:domain" content="bmm.now.sh" />
                 <meta name="twitter:title" content="Bass Music Movement" />
                 <meta name="twitter:description" content="Music promotion, record label and cars" />
-                <meta name="twitter:image" content="https://bmm.now.sh/asets/BassMusicMovement.jpg" />
+                <meta name="twitter:image" content="https://bmm.now.sh/BassMusicMovement.jpg" />
                 <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
                 <meta name="twitter:url" content="https://bmm.now.sh" />
 
