@@ -1,0 +1,15 @@
+.section {
+    /* Dark parallax background image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Full-screen height */
+    height: 100vh;
+
+    /* Center items horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

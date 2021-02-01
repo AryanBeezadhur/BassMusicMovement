@@ -1,0 +1,21 @@
+.header {
+    position: absolute;
+    width: 100%;
+
+    /* Center items horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile-only styles */
+
+@media only screen and (max-width: 770px) {
+    .header {
+        position: static;
+    }
+
+    .a {
+        margin: 0;
+    }
+}

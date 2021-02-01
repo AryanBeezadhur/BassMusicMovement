@@ -1,0 +1,24 @@
+.title {
+    font-weight: normal;
+    font-size: 12vh;
+}
+
+.videoTitle {
+    font-size: 30px;
+}
+
+.videoPublishDate {
+    margin: 20px;
+    color: var(--gray);
+}
+
+.videoThumbnail {
+    border-radius: 20px;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 770px) {
+    .title {
+        font-size: 5vh;
+    }
+}
