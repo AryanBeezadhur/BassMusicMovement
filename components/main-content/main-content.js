@@ -1,6 +1,5 @@
 import styles from './main-content.module.css'
 import Section from './section'
-import AOS from 'aos'
 import Image from 'next/image'
 
 if (process.browser) {
@@ -11,11 +10,11 @@ export default function MainContent({ videoData }) {
 
     return (
         <main>
-            <Section backgroundImageUrl="/BassMusicMovement.jpg">
+            <Section>
 
                 <h1 className={styles.title}>
                     <span data-aos="fade-down" data-aos-duration="200">bass</span>
-                    <span data-aos="fade-up" data-aos-duration="600">music</span>
+                    <span data-aos="fade-down" data-aos-duration="600">music</span>
                     <b data-aos="fade-down" data-aos-duration="1000">movement</b>
                 </h1>
 
@@ -32,6 +31,7 @@ export default function MainContent({ videoData }) {
                         <p className={styles.videoPublishDate}>{video.publishDate}</p>
 
                         <Image
+                            data-aos="fade-down"
                             className={styles.videoThumbnail}
                             src={video.thumbnail.url}
                             width={video.thumbnail.width}

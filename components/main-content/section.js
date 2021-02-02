@@ -1,6 +1,6 @@
 import styles from './section.module.css'
 
-export default function Section({ children, backgroundImageUrl }) {
+export default function Section({ children }) {
     return (
         <>
             <section className={styles.section}>
@@ -8,13 +8,6 @@ export default function Section({ children, backgroundImageUrl }) {
                     {children}
                 </center>
             </section>
-
-            {/* Change background image depending on backgroundImageUrl prop */}
-            <style jsx >{`
-                section {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${backgroundImageUrl});
-                }
-            `}</style>
         </>
     )
 }

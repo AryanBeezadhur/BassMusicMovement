@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 
                 {/* Browser tab: Title and icon */}
                 <title>Bass Music Movement</title>
-                <link rel="shortcut icon" type="image/x-icon" href="/DarkBMMIcon.jpg" />
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.jpg" />
 
                 {/* SEO */}
                 <meta name="description" content="Music promotion, record label and cars" />
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 
                 {/* OpenGraph card */}
                 <meta property="og:title" content="Bass Music Movement" />
-                <meta property="og:image" content="https://bmm.now.sh/BassMusicMovement.jpg" />
+                <meta property="og:image" content="https://bmm.now.sh/hero-background.jpg" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://bmm.now.sh" />
                 <meta property="og:site_name" content="www.bmm.now.sh" />
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name="twitter:domain" content="bmm.now.sh" />
                 <meta name="twitter:title" content="Bass Music Movement" />
                 <meta name="twitter:description" content="Music promotion, record label and cars" />
-                <meta name="twitter:image" content="https://bmm.now.sh/BassMusicMovement.jpg" />
+                <meta name="twitter:image" content="https://bmm.now.sh/hero-background.jpg" />
                 <meta name="twitter:image:alt" content="Music promotion, record label and cars" />
                 <meta name="twitter:url" content="https://bmm.now.sh" />
 
@@ -41,14 +41,15 @@ function MyApp({ Component, pageProps }) {
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
-                {/* AOS */}
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
-
                 {/* Global CSS */}
                 <link rel="stylesheet" href="/style.css" />
 
                 {/* Splitbee */}
                 <script data-no-cookie async data-api="/_hive" src="/bee.js"></script>
+
+                {/* AOS */}
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+                <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
             </Head>
 
             <Component {...pageProps} />
