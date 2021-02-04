@@ -5,7 +5,13 @@ export default function Footer() {
         <footer className={styles.footer}>
             <center>
                 Website created by{' '}
-                <a className={styles.a} target="_blank" rel="noopener noreferrer" href="https://aryanbeezadhur.com">
+                <a
+                    data-splitbee-event="Click footer link"
+                    className={styles.a}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://aryanbeezadhur.com"
+                >
                     Aryan Beezadhur
                 </a>
             </center>

@@ -2,11 +2,11 @@ import styles from './main-content.module.css'
 import Section from './section'
 import Image from 'next/image'
 
-if (process.browser) {
-    AOS.init()
-}
-
 export default function MainContent({ videoData }) {
+
+    if (process.browser) {
+        AOS.init()
+    }
 
     return (
         <main>
@@ -22,7 +22,14 @@ export default function MainContent({ videoData }) {
 
             {videoData.map((video) => (
 
-                <a key={video.url} href={video.url} target="_blank" rel="noopener noreferrer">
+                <a
+                    key={video.url}
+                    data-splitbee-event="Click video section"
+                    data-splitbee-event-type={video.title}
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
 
                     <Section backgroundImageUrl={video.thumbnail.url}>
 
