@@ -18,7 +18,11 @@ export default function Index({ videoData }) {
 // Response revalidated after 1 day (86400 seconds)
 export async function getStaticProps() {
 
-    const videosRequestURL = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_API_KEY}&channelId=${process.env.CHANNEL_ID}&part=snippet,id&order=date&maxResults=5`
+    const youtubeApiKey = process.env.YOUTUBE_API_KEY
+    const channelId = process.env.CHANNEL_ID
+    const numVideos = 5
+
+    const videosRequestURL = `https://www.googleapis.com/youtube/v3/search?key=${youtubeApiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${numVideos}`
 
     const res = await fetch(videosRequestURL)
     const data = await res.json()
