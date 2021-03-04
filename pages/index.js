@@ -29,7 +29,7 @@ export async function getStaticProps() {
             url: `https://youtube.com/watch?v=${item.id.videoId}`,
             title: item.snippet.title,
             thumbnail: item.snippet.thumbnails.high,
-            publishDate: new Date(item.snippet.publishedAt).toDateString() // convert UTC date to JavaScript date string
+            publishDate: new Date(item.snippet.publishedAt).toDateString() // Convert UTC date to JavaScript date string
         }
     })
 
