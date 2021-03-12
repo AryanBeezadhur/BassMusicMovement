@@ -20,7 +20,7 @@ export default function MainContent({ videoData }) {
 
             </Section>
 
-            {videoData.map((video) => (
+            {videoData.map(video => (
 
                 <a
                     key={video.url}
